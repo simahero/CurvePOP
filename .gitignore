@@ -1,0 +1,14 @@
+.vs
+Backup
+lib
+LSystemPOP
+*.tlog
+*.obj
+*.iobj
+*.pdb
+*.ipdb
+*.exp
+*.ilk
+*.log
+*.mov
+*.mp4

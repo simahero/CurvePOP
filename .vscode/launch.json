@@ -1,0 +1,28 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug CurvePOP (TouchDesigner)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "D:/Derivative/TouchDesigner/bin/TouchDesigner.exe",
+			"args": ["C:/Users/zoile/Desktop/L-SystemPOP/L-SystemPOP.toe"],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "integratedTerminal",
+			"preLaunchTask": "Build CurvePOP (Debug)"
+		},
+		{
+			"name": "Debug CurvePOP (No Build)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "D:/Derivative/TouchDesigner/bin/TouchDesigner.exe",
+			"args": ["C:/Users/zoile/Desktop/L-SystemPOP/L-SystemPOP.toe"],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "integratedTerminal"
+		}
+	]
+}

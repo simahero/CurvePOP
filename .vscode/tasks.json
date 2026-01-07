@@ -1,0 +1,60 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build CurvePOP (Debug)",
+			"type": "shell",
+			"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+			"args": ["${workspaceFolder}\\CurvePOP.sln", "/p:Configuration=Debug", "/p:Platform=x64", "/m", "/v:minimal"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile",
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "Build CurvePOP (Release)",
+			"type": "shell",
+			"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+			"args": ["${workspaceFolder}\\CurvePOP.sln", "/p:Configuration=Release", "/p:Platform=x64", "/m", "/v:minimal"],
+			"group": "build",
+			"problemMatcher": "$msCompile",
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "Clean CurvePOP",
+			"type": "shell",
+			"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+			"args": ["${workspaceFolder}\\CurvePOP.sln", "/t:Clean", "/p:Configuration=Debug", "/p:Platform=x64"],
+			"group": "build",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Rebuild CurvePOP (Debug)",
+			"type": "shell",
+			"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+			"args": ["${workspaceFolder}\\CurvePOP.sln", "/t:Rebuild", "/p:Configuration=Debug", "/p:Platform=x64", "/m"],
+			"group": "build",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Rebuild CurvePOP (Release)",
+			"type": "shell",
+			"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+			"args": ["${workspaceFolder}\\CurvePOP.sln", "/t:Rebuild", "/p:Configuration=Release", "/p:Platform=x64", "/m"],
+			"group": "build",
+			"problemMatcher": "$msCompile",
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
+		}
+	]
+}
